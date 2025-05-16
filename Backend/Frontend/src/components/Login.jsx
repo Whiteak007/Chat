@@ -69,7 +69,7 @@ function Login() {
               </span>
               <input
                 type="email"
-                className="w-full pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-300"
+                className="w-full pl-10 pr-3 py-2 rounded-lg text-red-500 font-bold border-2 border-gray-200 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-300"
                 placeholder="Email"
                 {...register("email", { required: true })}
               />
@@ -100,7 +100,7 @@ function Login() {
               </span>
               <input
                 type="password"
-                className="w-full pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-300"
+                className="w-full pl-10 pr-3 py-2 rounded-lg text-red-500 font-bold border-2 border-gray-200 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-300"
                 placeholder="Password"
                 {...register("password", { required: true })}
               />
@@ -116,7 +116,7 @@ function Login() {
           <div>
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="w-full bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               Login
             </button>
@@ -128,7 +128,7 @@ function Login() {
               Don't have an account?{" "}
               <Link
                 to="/signup"
-                className="text-blue-600 hover:text-blue-800 font-medium underline transition-colors duration-300"
+                className="text-blue-600 hover:text-blue-800 cursor-pointer font-medium underline transition-colors duration-300"
               >
                 Sign Up
               </Link>
